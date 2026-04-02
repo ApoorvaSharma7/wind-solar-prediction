@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EnergyPredict</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2> EnergyPredict</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+    </div>
+</nav>
+
+<div class="hero fade-in">
+    <h1>Wind & Solar Energy Prediction</h1>
+    <p>Estimate renewable energy using smart parameters</p>
+</div>
+
+<div class="card fade-in">
+    <h2> What is Energy Prediction?</h2>
+    <p>
+        Energy prediction helps estimate how much electricity can be generated
+        from renewable sources like solar and wind using environmental data.
+    </p>
+</div>
+
+<div class="card fade-in">
+    <h2> Solar Energy Prediction</h2>
+    <p>
+        Solar energy depends on sunlight, panel efficiency, and area.
+        Our system calculates expected output based on user input.
+    </p>
+
+    <input type="number" id="area" placeholder="Area (m²)">
+    <input type="number" id="efficiency" placeholder="Efficiency">
+    <input type="number" id="irradiance" placeholder="Irradiance">
+    <input type="number" id="pr" placeholder="Performance Ratio">
+
+    <button onclick="predict()">Calculate</button>
+    <p id="result"></p>
+</div>
+
+<div class="card fade-in">
+    <h2> Wind Energy Prediction</h2>
+    <p>
+        Wind turbines convert wind energy into electricity. Higher wind speed
+        results in greater power generation.
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
